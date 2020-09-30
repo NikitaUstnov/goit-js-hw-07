@@ -12,4 +12,10 @@ const headers = document.querySelectorAll(".item h2");
 const listEl = categories.getElementsByTagName("ul");
 
 console.log(`Категория:${headers[0].textContent}
-  Количество элементов: ${listEl[0].childElementCount}`);
+Количество элементов: ${listEl[0].childElementCount}`);
+
+console.log(`Категория:${headers[1].textContent}
+Количество элементов: ${listEl[1].childElementCount}`);
+
+console.log(`Категория:${headers[2].textContent}
+Количество элементов: ${listEl[2].childElementCount}`);

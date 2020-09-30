@@ -15,3 +15,17 @@ const images = [
     alt: "Group of Horses Running",
   },
 ];
+
+//обращаемся к ul по id
+const imgEl = document.querySelector("#gallety");
+
+// на каждой итерации создаем li и вкладываем в него елемент
+const imgList = images.map((element) => {
+  const tagImg = document.createElement("img");
+  const itemEl = document.createElement("li");
+  itemEl.append(tagImg);
+  // tagImg.append(element);
+  return itemEl;
+});
+
+console.log(...imgList);
