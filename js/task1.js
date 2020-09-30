@@ -9,7 +9,8 @@ const listTitle = document.querySelectorAll(".item h2").length;
 console.log(`В списке ${listTitle} категории.`);
 
 const headers = document.querySelectorAll(".item h2");
-const listEl = document.querySelectorAll(".item li").length;
+const listEl = categories.querySelectorAll("li.item > ul");
+
 console.log(
   "Категория:",
   headers[0].textContent,
