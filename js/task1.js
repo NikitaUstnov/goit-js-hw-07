@@ -9,12 +9,7 @@ const listTitle = document.querySelectorAll(".item h2").length;
 console.log(`В списке ${listTitle} категории.`);
 
 const headers = document.querySelectorAll(".item h2");
-const listEl = categories.querySelectorAll("li.item > ul");
+const listEl = categories.getElementsByTagName("ul");
 
-console.log(
-  "Категория:",
-  headers[0].textContent,
-  "\n",
-  "Количество элементов:",
-  listEl
-);
+console.log(`Категория:${headers[0].textContent}
+  Количество элементов: ${listEl[0].childElementCount}`);
