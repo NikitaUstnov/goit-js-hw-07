@@ -9,3 +9,9 @@
 #validation-input.invalid {
   border-color: #f44336;
 }
+/* task 3 */
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
