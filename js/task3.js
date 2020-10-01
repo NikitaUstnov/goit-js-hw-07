@@ -17,15 +17,28 @@ const images = [
 ];
 
 //обращаемся к ul по id
-const imgEl = document.querySelector("#gallety");
+const imgEl = document.querySelector("#gallery");
 
 // на каждой итерации создаем li и вкладываем в него елемент
-const imgList = images.map((element) => {
+const imgList = images.map((elem) => {
   const tagImg = document.createElement("img");
   const itemEl = document.createElement("li");
   itemEl.append(tagImg);
-  // tagImg.append(element);
+  tagImg.append(elem);
   return itemEl;
 });
 
 console.log(...imgList);
+
+// const imgEl = document.querySelector("#gallery");
+// imgEl.classList.add("list");
+
+// imgEl.insertAdjacentHTML(
+//   "afterbegin",
+//   images.reduce((acc, { url, alt }) => {
+//     acc += `<li><img class="img" src="${url}" alt="${alt}"/></li>`;
+//     return acc;
+//   }, "")
+// );
+
+// console.log(imgEl);
