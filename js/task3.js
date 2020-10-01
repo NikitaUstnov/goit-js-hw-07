@@ -25,9 +25,7 @@ const imgList = images.map((elem) => {
   const itemEl = document.createElement("li");
   itemEl.append(tagImg);
   tagImg.append(elem);
-  return itemEl;
 });
-
 console.log(...imgList);
 
 // const imgEl = document.querySelector("#gallery");
