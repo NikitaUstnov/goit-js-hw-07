@@ -2,14 +2,24 @@ const onMinus = document.querySelector('[data-action="decrement"]');
 const onPlus = document.querySelector('[data-action="increment"]');
 const counValue = document.getElementById("value");
 
-// let cunt = 0;
-// // counValue.addEventListener("click", onClick);
+const counter = {
+  value: 0,
+  increment() {
+    console.log("increment -> this", this);
+    this.value += 1;
+  },
+  decrement() {
+    console.log("decrement -> this", this);
+    this.value -= 1;
+  },
+};
 
-// const onClick = function () {
-//   console.log("gh");
-//   //   cunt = cunt + 1;
-//   //   return cunt;
-// };
+onMinus.addEventListener("click", function () {
+  counter.decrement();
+  counValue.textContent = counter.value;
+});
 
-// counValue.addEventListener("click", onClick);
-// console.log(counValue.textContent);
+onPlus.addEventListener("click", function () {
+  counter.increment();
+  counValue.textContent = counter.value;
+});
