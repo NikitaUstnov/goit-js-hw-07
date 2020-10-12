@@ -5,7 +5,7 @@ inputValueEl.addEventListener("blur", validation);
 function validation() {
   if (inputValueEl.value.length == inputValueEl.dataset.length) {
     inputValueEl.classList.add("valid");
-    // inputValueEl.classList.remove("invalid");
+     inputValueEl.classList.remove("invalid");
   }
   if (inputValueEl.value.length != inputValueEl.dataset.length) {
     inputValueEl.classList.remove("valid");
